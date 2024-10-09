@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exercice 27</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <script type="module" src="./assets/js/main.js"></script>
+</head>
+<body>
+<header>
+  <img src="assets/image/pokeapi_256.png" alt="PokeAPI Logo" class="img-fluid" />
+  <form action="#" id="pokemon-search" class="form-inline">
+    <input
+            type="text"
+            placeholder="Nom ou Numéro de Pokédex national"
+            id="search-input"
+            class="form-control"
+    />
+    <button class="btn btn-primary">Search</button>
+  </form>
+</header>
+<main class="container">
+  <div class="d-flex justify-content-center">
+    <button id="pokemon-previous" class="btn btn-secondary">&lt;&lt;</button>
+    <div id="pokemon-display">
+      <img
+              id="pokemon-picture"
+              src="assets/image/pokeball.png"
+              alt="Pokemon Sprite"
+              class="img-fluid"
+      />
+      <span id="pokemon-id">ID</span>
+      <span id="pokemon-name">NAME</span>
+      <span id="pokemon-weight">WEIGHT</span>
+      <span id="pokemon-height">HEIGHT</span>
+      <ul id="pokemon-types"></ul>
+      <ul id="pokemon-abilities"></ul>
+    </div>
+    <button id="pokemon-next" class="btn btn-secondary">&gt;&gt;</button>
+  </div>
+</main>
+</body>
+</html>
