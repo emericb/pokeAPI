@@ -10,6 +10,9 @@
 </head>
 <body>
 <header>
+  <select id="generation-select" class="form-control">
+    <option value="">Select Generation</option>
+  </select>
   <img src="assets/image/pokeapi_256.png" alt="PokeAPI Logo" class="img-fluid" />
   <form action="#" id="pokemon-search" class="form-inline">
     <input
@@ -22,6 +25,13 @@
   </form>
 </header>
 <main class="container">
+  <div class="d-flex justify-content-center">
+    <main class="container">
+      <div class="d-flex justify-content-center">
+      </div>
+      <div id="pokemon-generation-list" class="d-flex flex-wrap justify-content-center"></div>
+    </main>
+    </div>
   <div class="d-flex justify-content-center">
     <button id="pokemon-previous" class="btn btn-secondary">&lt;&lt;</button>
     <div id="pokemon-display">
@@ -37,9 +47,12 @@
       <span id="pokemon-height">HEIGHT</span>
       <ul id="pokemon-types"></ul>
       <ul id="pokemon-abilities"></ul>
+
+      <button id="pokemon-capture" class="btn btn-success">Capture</button>
     </div>
     <button id="pokemon-next" class="btn btn-secondary">&gt;&gt;</button>
-  </div>
+    </div>
+    <a href="captured.html" class="btn btn-primary">Captured Pokémon</a>
 </main>
 </body>
 </html>
