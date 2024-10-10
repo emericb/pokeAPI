@@ -31,18 +31,18 @@ main.container {
     padding: 2rem;
 }
 
-#pokemon-display {
+#pokemon-container {
     text-align: center;
     margin: 2rem 0;
 }
 
-#pokemon-display img {
+#pokemon-container img {
     max-width: 150px;
     margin-bottom: 1rem;
 }
 
-#pokemon-display span,
-#pokemon-display ul {
+#pokemon-container span,
+#pokemon-container ul {
     display: block;
     margin: 0.5rem 0;
 }
